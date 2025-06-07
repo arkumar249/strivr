@@ -1,0 +1,103 @@
+<!-- i am going t0 be changed -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+    <title>Spotify_to host</title>
+</head>
+
+<body>
+    <div class="main-container bg-black flex">
+
+        <!-- left side main box-->
+        <div class="left bg-black  m-1">
+            <!-- home part -->
+            <div class="home bg-grey rounded p-1">
+                <div class="logo invert"><img src="Images/logo.svg" alt="logo"> 
+                    <img  class="close_ham " src="Images/close.svg" alt="close">
+                </div>
+                <ul>
+                    <li><img class="invert" src="Images/home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="Images/search.svg" alt="Search">Search</li>
+
+                </ul>
+            </div>
+            <!-- library part -->
+            <div class="library bg-grey rounded p-1">
+                <div class="lib-head">
+                    <img class="invert" src="Images/playlist.svg" alt="playlist">
+                    <h2>Your library</h2>
+                </div>
+                <div class="songList">
+                    <ul></ul>
+
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- right side main box -->
+        <div class="right rounded p-1">
+            <!-- header-nav part -->
+            <div class="header rounded">
+                
+                <div class="arrow-nav">
+                    <div id="hamburger" class="hamburger">
+                    <img class="invert " src="Images/hamburger.svg" alt="hamburger">
+                </div>
+                    <img src="Images/left_arrow.svg" alt="arraow-left">
+                    <img src="Images/right_arrow.svg" alt="arraow-right">
+                </div>
+
+                <div class="log-sign flex">
+                    <button id="b1">Sign up</button>
+                    <button id="b2">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">   
+                   
+
+                </div>
+                <!-- play bar part -->
+                <div class="play-bar rounded">
+                    <div class="playbar-row">
+                        <div class="song-info">Song Title - Artist</div>
+                         <div class="volume">
+                            <img  id="volume_btn"  src="Images/volume.svg" alt="volume">
+                            <input id="vol_slider"
+                            type="range" >
+                        </div>
+                        <div class="songButtons">
+                            <img id="previous" src="Images/prevsong.svg" alt="prevsong" class="prevsong">
+                            <img id="play" src="Images/play.svg" alt="play" class="playsong">
+                            <img id="next" src="Images/nextsong.svg" alt="nextsong" class="nextsong">
+                        </div>
+                        <div class="song-time">01:23 / 03:45</div>
+                       
+                    </div>
+                    <div id="seekbar" class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
